@@ -23,7 +23,7 @@ public class Hub implements CommandExecutor{
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String string, String[] args) {
         if (cmd.getName().equalsIgnoreCase("hub")){
-            sender.sendMessage(Core.warning + "You already are at hub!");
+            sender.sendMessage(Core.warning + "You are already at a hub server.");
         }
         return false;
     }

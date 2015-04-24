@@ -26,7 +26,7 @@ public class Mod implements CommandExecutor{
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String string, String[] args) {
         if (cmd.getName().equalsIgnoreCase("mod")){
-            sender.sendMessage(Core.warning + "Command not currently setup.");
+            sender.sendMessage(Core.warning + "Command removed for: §lTESTING§c.");
 //            if (args.length !=1){
 //                sender.sendMessage(Core.warning + "MC Mania Moderator Commands:");
 //                sender.sendMessage(Core.warninglist + "/mod §ewarn [player] [reason] §8- §7Warns a player.");

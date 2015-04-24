@@ -24,12 +24,24 @@ public class ModeChange implements CommandExecutor{
     public boolean onCommand(CommandSender sender, Command cmd, String string, String[] args) {
         if (cmd.getName().equalsIgnoreCase("betamode")){
             if (Core.beta == true){
+                sender.sendMessage("");
+                sender.sendMessage("");
+                sender.sendMessage("");
                 sender.sendMessage(Core.warning + "Beta mode un-toggled.");
                 sender.sendMessage(Core.warning + "Players will now be able to join the server.");
+                sender.sendMessage("");
+                sender.sendMessage("");
+                sender.sendMessage("");
                 Core.beta = false;
             } else {
+                sender.sendMessage("");
+                sender.sendMessage("");
+                sender.sendMessage("");
                 sender.sendMessage(Core.warning + "Beta mode toggled.");
-                sender.sendMessage(Core.warning + "Players will not be able to join the server.");
+                sender.sendMessage(Core.warning + "Players will §lnot §cbe able to join the server.");
+                sender.sendMessage("");
+                sender.sendMessage("");
+                sender.sendMessage("");
                 Core.beta = true;
             }
         }

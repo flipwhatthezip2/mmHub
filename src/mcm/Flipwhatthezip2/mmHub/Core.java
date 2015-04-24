@@ -64,7 +64,7 @@ public class Core extends JavaPlugin implements Listener{
         core = this;
         getCommand("mod").setExecutor(new Mod());
         getCommand("hub").setExecutor(new Hub());
-        getCommand("betamode").setExecutor(new ModeChange());
+        getCommand("servermode").setExecutor(new ModeChange());
 
         beta = false;
 

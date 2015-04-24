@@ -4,7 +4,7 @@ version: 1.0
 main: mcm.Flipwhatthezip2.mmHub.Core
 commands:
   hub:
-    description: Sends player to hub.
+    description: Sends player to a hub server.
   mod:
     description: All moderator commands.
   betamode:

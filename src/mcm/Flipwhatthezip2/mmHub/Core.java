@@ -55,6 +55,8 @@ public class Core extends JavaPlugin implements Listener{
     public static Scoreboard board;
 
     public static boolean beta;
+    public static boolean locked;
+    public static boolean updating;
 
     public void onEnable(){
         Bukkit.getServer().getLogger().info(">> MC Mania [HUB] Booted Up!");

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="mmHub.jar">
+    <output-path>$USER_HOME$/Desktop/Cameron/Files/MC MANIA SERVER/plugins</output-path>
+    <root id="archive" name="mmHub.jar">
+      <element id="module-output" name="mmHub" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,11 @@
+name: mmHub
+author: Flipwhatthezip2
+version: 1.0
+main: mcm.Flipwhatthezip2.mmHub.Core
+commands:
+  hub:
+    description: Sends player to hub.
+  mod:
+    description: All moderator commands.
+  betamode:
+    description: Toggles beta mode.

@@ -1,3 +1,4 @@
 mmHub:
 - Add settings selector (allow players to toggle server settings)
 - Monitor Events (Block Break, PVP, Interact, etc)
+- Add new server modes (Updating, Locked)

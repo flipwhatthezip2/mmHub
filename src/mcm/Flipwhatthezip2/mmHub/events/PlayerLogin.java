@@ -37,7 +37,14 @@ public class PlayerLogin implements Listener {
             p.sendMessage("§5§l>> §7You have joined: §d§lHUB 1");
             Feature.sendTabTitle(p, "  §d§lMC MANIA §8❘ §c§lBETA MODE  ", "     §3www.mcmania.us     ");
         }
-        if (Core.beta == false) {
+        if (Core.updating == true) {
+            p.sendMessage("§5§l>> §7Welcome to §d§lMC MANIA");
+            p.sendMessage("§5§l>> §cBeta Mode has been enabled! Players cannot join.");
+            p.sendMessage("§5§l>> §cBeta Mode will reset after reloading/ restarting.");
+            p.sendMessage("§5§l>> §7You have joined: §d§lHUB 1");
+            Feature.sendTabTitle(p, "  §d§lMC MANIA §8❘ §c§lBETA MODE  ", "     §3www.mcmania.us     ");
+        }
+        if (Core.beta == false && Core.updating == false && Core.locked == false) {
             p.sendMessage("§5§l>> §7Welcome to §d§lMC MANIA");
             p.sendMessage("§5§l>> §7Player Count: §a§l" + Bukkit.getServer().getOnlinePlayers().size() + "§7/§a§l20");
             p.sendMessage("§5§l>> §7Be sure to §e§lVOTE §7and §e§lDONATE§7! It helps us out.");

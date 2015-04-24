@@ -14,14 +14,11 @@ package mcm.Flipwhatthezip2.mmHub;
  */
 
 
-import mcm.Flipwhatthezip2.mmHub.commands.Hub;
-import mcm.Flipwhatthezip2.mmHub.commands.Mod;
-import mcm.Flipwhatthezip2.mmHub.commands.ModeChange;
+import mcm.Flipwhatthezip2.mmHub.commands.*;
 import mcm.Flipwhatthezip2.mmHub.events.Register;
 import mcm.Flipwhatthezip2.mmHub.scoreboard.MainScoreboard;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -64,7 +61,9 @@ public class Core extends JavaPlugin implements Listener{
         core = this;
         getCommand("mod").setExecutor(new Mod());
         getCommand("hub").setExecutor(new Hub());
-        getCommand("servermode").setExecutor(new ModeChange());
+        getCommand("betamode").setExecutor(new BetaMode());
+        getCommand("updatingmode").setExecutor(new UpdatingMode());
+        getCommand("lockedmode").setExecutor(new LockedMode());
 
         beta = false;
 

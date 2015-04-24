@@ -7,5 +7,9 @@ commands:
     description: Sends player to a hub server.
   mod:
     description: All moderator commands.
-  servermode:
-    description: Toggles various servermodes.
+  betamode:
+    description: Toggles various server modes.
+  updatingmode:
+    description: Toggles various server modes.
+  lockedmode:
+    description: Toggles various server modes.

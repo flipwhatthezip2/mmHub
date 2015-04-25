@@ -39,7 +39,7 @@ public class UpdatingMode implements CommandExecutor {
                 sender.sendMessage("");
                 sender.sendMessage(Core.warning + "Updating mode toggled.");
                 sender.sendMessage(Core.warning + "Players will §lnot §cbe able to join the server.");
-                sender.sendMessage(Core.warning + "§4OWNERS §c/ §d§lDEVS §cwill be able to join the server.");
+                sender.sendMessage(Core.warning + "§c§lOWNERS§c/§c§lDEVS §cwill be able to join the server.");
                 sender.sendMessage("");
                 sender.sendMessage("");
                 sender.sendMessage("");

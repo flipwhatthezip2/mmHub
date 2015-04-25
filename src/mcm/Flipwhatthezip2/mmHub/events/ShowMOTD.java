@@ -23,12 +23,18 @@ public class ShowMOTD implements Listener {
 
     @EventHandler
     public void ShowMOTD(ServerListPingEvent e){
-        if (Core.beta == false){
+        if (Core.beta == false && Core.updating == false && Core.locked == false){
             e.setMotd("§d§lMC MANIA §8❘ §a§lGRAND OPENING!\n" +
                     "§e§lNEW §eCreative §8❘ §6Survival Games Update!");
-        } else if (Core.beta == true){
-            e.setMotd("§d§lMC MANIA §8❘ §c§lBETA MODE! \n" +
-                    "§cAccess to the server is §lCLOSED!");
+        } if (Core.beta == true){
+            e.setMotd("§d§lMC MANIA §8❘ §b§lBETA MODE! \n" +
+                    "§bPurchase a rank to access this server.");
+        } if (Core.updating == true){
+            e.setMotd("§d§lMC MANIA §8❘ §e§lWERE UPDATING! \n" +
+                    "§eBe back soon! Adding marvelous new features.");
+        } if (Core.locked == true){
+            e.setMotd("§d§lMC MANIA §8❘ §4§lOH DEER! ISSUE FOUND \n" +
+                    "§c§lLOCKDOWN §cmode. Check the website for updates.");
         }
     }
 

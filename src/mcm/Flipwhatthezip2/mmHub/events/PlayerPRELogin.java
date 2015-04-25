@@ -26,12 +26,24 @@ public class PlayerPRELogin implements Listener {
     public void PlayerPRELogin(AsyncPlayerPreLoginEvent e) {
         String p = e.getName();
         if (Core.beta == true) {
-            if (p.equalsIgnoreCase("Flipwhatthezip2") || p.equalsIgnoreCase("Maxwell3103")) {
+            if (p.equalsIgnoreCase("Flipwhatthezip2")) {
                 return;
             } else {
                 e.disallow(AsyncPlayerPreLoginEvent.Result.KICK_OTHER, "§4§l>> §c§lUH OH! §4§l<< \n" +
-                        "§cPlayer joining is not permitted whilst the server is in §lBETA MODE!");
+                        "§cPlayer joining is not permitted during §lBETA MODE!");
             }
+        }
+        if (Core.updating == true) {
+            if (p.equalsIgnoreCase("Flipwhatthezip2")) {
+                return;
+            } else {
+                e.disallow(AsyncPlayerPreLoginEvent.Result.KICK_OTHER, "§4§l>> §c§lUH OH! §4§l<< \n" +
+                        "§cPlayer joining is not permitted during §lUPDATING MODE!");
+            }
+        }
+        if (Core.locked == true) {
+            e.disallow(AsyncPlayerPreLoginEvent.Result.KICK_OTHER, "§4§l>> §c§lUH OH! §4§l<< \n" +
+                    "§cPlayer joining is not permitted during §lLOCKDOWN MODE!");
         }
     }
 }
